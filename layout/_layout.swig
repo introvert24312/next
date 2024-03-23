@@ -7,9 +7,14 @@
   <title>{% block title %}{% endblock %}</title>
   {{ partial('_third-party/analytics/index.swig', {}, {cache: theme.cache.enable}) }}
   {{ partial('_scripts/noscript.swig', {}, {cache: theme.cache.enable}) }}
+<!-- Add GitHub Fork Ribbon CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/github-fork-ribbon-css/0.2.3/gh-fork-ribbon.min.css" />
 </head>
-
+</head>
 <body itemscope itemtype="http://schema.org/WebPage">
+  <!-- GitHub Fork Ribbon Start -->
+  <a class="github-fork-ribbon" href="https://github.com/introvert24312" data-ribbon="Fork me on GitHub" title="Fork me on GitHub">Fork me on GitHub</a>
+  <!-- GitHub Fork Ribbon End -->
   <div class="container{%- if theme.motion.enable %} use-motion{%- endif %}">
     <div class="headband"></div>
 
