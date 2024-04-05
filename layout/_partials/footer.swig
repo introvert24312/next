@@ -30,6 +30,15 @@
     <span title="{{ __('symbols_count_time.count_total') }}">{{ symbolsCountTotal(site) }}</span>
   {%- endif %}
 
+{% if theme.mermaid.enable %}
+  <script src='https://unpkg.com/mermaid@{{ theme.mermaid.version }}/dist/mermaid.min.js'></script>
+  <script>
+    if (window.mermaid) {
+      mermaid.initialize(JSON.stringify({{ theme.mermaid.options }}));
+    }
+  </script>
+{% endif %}
+
   {%- if config.symbols_count_time.total_time %}
     <span class="post-meta-divider">|</span>
     <span class="post-meta-item-icon">
