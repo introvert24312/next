@@ -7,7 +7,6 @@
   <title>{% block title %}{% endblock %}</title>
   {{ partial('_third-party/analytics/index.swig', {}, {cache: theme.cache.enable}) }}
   {{ partial('_scripts/noscript.swig', {}, {cache: theme.cache.enable}) }}
-  <script src="https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js"></script>
 </head>
 </head>
 <body itemscope itemtype="http://schema.org/WebPage">
@@ -47,9 +46,6 @@
   </div>
 
   {{ partial('_scripts/index.swig', {}, {cache: theme.cache.enable}) }}
-<script>
-  mermaid.initialize({startOnLoad:true});
-</script>
   {{ partial('_third-party/index.swig', {}, {cache: theme.cache.enable}) }}
   {%- if theme.pjax %}
     <div id="pjax">
