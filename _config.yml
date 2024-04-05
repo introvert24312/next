@@ -1000,6 +1000,6 @@ images: images
 fold:
   bg_color: "transparent"
   board_color: "transparent"
-  text_color: "#FFFF00"
+  text_color: "#C0C0C0"
 
 
