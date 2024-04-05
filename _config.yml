@@ -811,10 +811,10 @@ pdf:
 
 # Mermaid tag
 mermaid:
-  enable: true
+  version: 10.9.0 
+  enable: true # next theme 默认为 True
   # Available themes: default | dark | forest | neutral
   theme: forest
-
 
 # ---------------------------------------------------------------
 # Animation Settings
